@@ -23,9 +23,13 @@ grounding, and reach out to crisis resources as needed.
 	 Should have space to enter user name and password
 
 2. Separate tab on main home page to show feelings
+
 	^ From 1-10 how angry are you?
+	
 	^ From 1-10 how hopeless do you feel?
+	
 	^ From 1-10 how anxious do you feel?
+	
 Have redirect available if any item is reported as 10 out of 10 for crisis line 
 (an alert to pop-up to visit crisis line tab most likely .js)
 
