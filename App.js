@@ -1,6 +1,9 @@
 import React from 'react';
 import {Route, HashRouter} from 'react-router-dom';
-
+import Home from './Home';
+import CheckYourHamster from './CheckYourHamster';
+import Grounding from './Grounding'; 
+import HamsterTrends from './HamsterTrends'; 
 
 const express = require('express')
 const app = express()
