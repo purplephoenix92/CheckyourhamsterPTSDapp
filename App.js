@@ -56,3 +56,20 @@ app.get('/select', (req, res) =>
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
+function App() {
+   return (
+     < HashRouter >
+       <div className="App">
+         <h1> Welcome to my Studio Ghibli fan site!</h1>
+         <Navbar/>
+         <Route exact path="/" component={Home} />
+         <Route path="/Check Your Hamster" component={CheckYourHamster} />
+         <Route path="/Grounding" component={Grounding} />
+         <Route path="/Breathing" component={Breathing} />
+         <Route path="/Hamster Trends" component={HamsterTrends} />
+       </div>
+     </HashRouter >
+   );
+ };
+ 
+ export default App;
