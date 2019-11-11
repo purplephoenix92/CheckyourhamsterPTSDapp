@@ -46,3 +46,25 @@ distress
 	Otherwise use HTML to type up lists of resources for clients
 	
 
+Weeks 4
+
+Work to create react page front-end for PTSD check-in
+Select database and learn initial steps (SQLlite)
+
+
+Week 5 
+
+Create backend express app (javascript)
+Create three routes
+
+Week 6
+Connect API to database
+CRUD data in database
+
+Week 7 
+
+Connect front-end to api
+CRUD operations through front-end
+
+Week 8 
+Hosting web-app 
