@@ -8,7 +8,7 @@ import HamsterTrends from './HamsterTrends';
 const express = require('express')
 const app = express()
 app.get('/',(request, response) =>{
-
+  response.send('I love mental health awareness');
 });
 const port = 3000
 
