@@ -7,6 +7,9 @@ import HamsterTrends from './HamsterTrends';
 
 const express = require('express')
 const app = express()
+app.get('/',(request, response) =>{
+
+});
 const port = 3000
 
 const sqlite3 = require('sqlite3').verbose();
