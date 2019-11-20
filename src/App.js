@@ -10,6 +10,10 @@ const app = express()
 app.get('/',(request, response) =>{
   response.send('I love mental health awareness');
 });
+
+ app.listen(3000 () =>{
+   console.log('The application is running on localhost:3000!')
+ })
 const port = 3000
 
 const sqlite3 = require('sqlite3').verbose();
