@@ -6,6 +6,7 @@ import CheckYourHamster from './CheckYourHamster';
 import Grounding from './Grounding'; 
 import HamsterTrends from './HamsterTrends'; 
 import Breathing from './Breathing';
+import Navbar from './navbar'; 
 
 
 function App() {
@@ -13,13 +14,12 @@ function App() {
      < HashRouter >
        <div className="App">
          <h1> Welcome to my Hamster site!</h1>
-         <Navbar>
+         <Navbar/>
          <Route exact path="/" component={Home} />
-         <Route path="/Check Your Hamster" component={CheckYourHamster} />
+         <Route path="/CheckYourHamster" component={CheckYourHamster} />
          <Route path="/Grounding" component={Grounding} />
          <Route path="/Breathing" component={Breathing} />
-         <Route path="/Hamster Trends" component={HamsterTrends} />
-         </Navbar>
+         <Route path="/HamsterTrends" component={HamsterTrends} />
        </div>
      </HashRouter >
    );
