@@ -1,5 +1,9 @@
 import React from 'react';
-import { homedir } from 'os';
+
+function Home() {
+    return (
+     <h1> Test home  </h1>
+    );}
 
 
 
