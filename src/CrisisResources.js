@@ -33,4 +33,4 @@ class CrisisResources extends React.Component {
 
 
 
-export default Grounding; 
+export default CrisisResources; 
