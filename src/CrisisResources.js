@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-class Grounding extends React.Component {
+class CrisisResources extends React.Component {
 
     constructor() {
 
         super();
         this.state = {};
     }
-//   Below is the message I wanted people to see when they look on my grounding page, to explain why I have created this site. 
+//   Below is the message I wanted people to see when they look on my Crisis Resources page, to provide site users with additional supports if needed. 
     render() {
         alert("test msg")
         return (

@@ -7,6 +7,7 @@ import Grounding from './Grounding';
 import HamsterTrends from './HamsterTrends'; 
 import Breathing from './Breathing';
 import Navbar from './navbar'; 
+import CrisisResources from './CrisisResources'; 
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
          <Route path="/Grounding" component={Grounding} />
          <Route path="/Breathing" component={Breathing} />
          <Route path="/HamsterTrends" component={HamsterTrends} />
+         <Route path="/CrisisResources" component={CrisisResources} />
        </div>
      </HashRouter >
    );
