@@ -44,6 +44,7 @@ class Navbar extends React.Component {
                             <li><Link to="/Grounding">Grounding</Link></li>
                             <li><Link to="/Breathing"> Breathing</Link></li>
                             <li><Link to="/HamsterTrends">Hamster Trends</Link></li>
+                            <li><Link to="/CrisisResources">Crisis Resources</Link></li>
                         </ul>
                     </div>
                 </div>
