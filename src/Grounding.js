@@ -13,14 +13,17 @@ class Grounding extends React.Component {
         
         return (
             <div>
+            <h3>
                 Grounding is a useful tool when you don't really feel completely present in a room, are having a flashback, or your emotions are compelling
                 you to relive a difficult, traumatic memory. 
-
-                So ask yourself: What are five things you can see? 
-                What are four things you can hear? 
-                What are three things you can touch? 
-                What are two things you can smell? 
-                What is one thing you can taste?
+            <div>
+                So ask yourself: </div>
+               <div> What are five things you can see? </div>
+            <div>What are four things you can hear? </div>
+            <div>What are three things you can touch? </div>
+            <div>What are two things you can smell? </div>
+            <div>What is one thing you can taste?</div>
+            </h3>
             </div>
         )
 

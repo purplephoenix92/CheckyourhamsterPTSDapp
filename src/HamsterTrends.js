@@ -13,8 +13,10 @@ class HamsterTrends extends React.Component {
         
         return (
             <div>
+            <h3>
                 This is where you can track your check-ins over time. The focus is on your emotional intensity. I hope that this will give you
                 some insight into your own patterns. 
+            </h3>
             </div>
         )
 
