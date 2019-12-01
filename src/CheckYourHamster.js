@@ -10,7 +10,7 @@ class CheckYourHamster extends React.Component {
     }
 //   Below is the message I wanted people to see when they look on my home page, to explain why I have created this site. 
     render() {
-        alert("test msg")
+        alert("If you are feeling a 8 or higher in your perception of your intensity, please see the Crisis Resources page for more support. Be well")
         return (
             <div>
                 Konnichiwa!
