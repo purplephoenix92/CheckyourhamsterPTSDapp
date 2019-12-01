@@ -13,8 +13,7 @@ class CrisisResources extends React.Component {
         alert("If you are in immediate danger please call 9-1-1 or your emergency number. Be well")
         return (
             <div>
-                Grounding is a useful tool when you don't really feel completely present in a room, are having a flashback, or your emotions are compelling
-                you to relive a difficult, traumatic memory. 
+                The following is a list of resources available to you:  
             </div>
         )
 
