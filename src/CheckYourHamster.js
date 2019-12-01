@@ -13,13 +13,13 @@ class CheckYourHamster extends React.Component {
         alert("If you are feeling a 8 or higher in your perception of your intensity, please see the Crisis Resources page for more support. Be well")
         return (
             <div>
-                Konnichiwa!
-                Thank you for visiting this fan website dedicated to showing you just some of what is in
-                the Studio Ghibli universe. The films, locations, and people are mainly part of the artistic
-                mind of visionary Hayao Miyazaki. Many of his works focus on environmental awareness, women
-                in strong leadership roles, and how to understand our bigger connection with the world around us.
-                I would strongly encourage anyone who visits to watch these films. I am sure you will fall in love
-                with this universe as I have. Happy exploring!!! 
+                Take just a moment to rate the following items on a scale of 1 to 10. 1 is very little intensity, and 10 being the most intense it has ever felt to you:
+            
+            <div>
+                1. On a scale of 1 to 10 where is your anger?
+                2. On a scale of 1 to 10 where is your depression?
+                3. On a scale of 1 to 10 where is your anxiety?
+            </div>
             </div>
         )
 
