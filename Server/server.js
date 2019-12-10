@@ -23,25 +23,27 @@ app.get('/',(request, response) =>{
   db.run('CREATE TABLE IF NOT EXISTS TEST_TABLE (id INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT);');
   
 //   create hamster table
-db.run(`CREATE TABLE Hamsters(
+db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
    HamsterID int,
    ReportedAnger int,
    ReportedDepression int,
    ReportedAnxiety int
-):`);
+);`);
   app.get('/', (req, res) => {
      res.send('Hello World!')
   });
   
   app.post('/insert', (req, res) =>  {
      const name = req.body.name;
+     console.log(req.body); 
      // The first arguement is your SQL with parameters indicated by ?, the order of the parameters is the order
      //   they will be applied. The second arguement is the array of parameters. In this case only one
-     db.run('INSERT INTO TEST_TABLE(HamsterID, ReportedAnger, ReportedDepression, ReportedAnxiety) VALUES (?)', [name], function(err){
+     db.run('INSERT INTO Hamsters(HamsterID) VALUES (?)', [name], function(err){
       if (err) {
           return console.log(err.message);
         }
         // get the last insert id
+        console.log (name);
         console.log(`A row has been inserted with rowid ${this.lastID}`);
      });
      res.sendStatus(200)
@@ -59,6 +61,18 @@ db.run(`CREATE TABLE Hamsters(
       res.send(JSON.stringify(results));
      });
   });
-  
+  app.get('/selectall', (req, res) =>
+  {
+    const results = [];
+    const name = req.query.name;
+    db.all('SELECT HamsterID FROM Hamsters', (err,rows) => {
+      rows.forEach((row) => {
+        results.push(row);
+
+      });
+      res.send(JSON.stringify(results));
+    });
+  });
+
   app.listen(port, () => console.log(`Example app listening on port ${port}!`))
   
