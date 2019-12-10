@@ -52,6 +52,7 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
     { if (err) {
       return console.log(err.message);
     }
+    console.log ('A column has been inserted');
     });
   
   app.get('/select', (req, res) => 
