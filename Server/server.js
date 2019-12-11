@@ -54,6 +54,10 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
     }
     console.log ('A column has been inserted');
     });
+
+    db.run("UPDATE Hamsters where HamsterID = 23");
+
+    db.run("DELETE * from Hamsters where condition"); 
   
   app.get('/select', (req, res) => 
   {
