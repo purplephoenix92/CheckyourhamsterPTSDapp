@@ -54,13 +54,17 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
     }
     console.log ("A column has been inserted");
     });
-
-    db.run("UPDATE Hamsters where HamsterID = 23"); function(err) {
+    let data = ['23', '29'];
+    let sql = `UPDATE HamsterID
+            SET name = ?
+            WHERE name = ?`;
+    db.run(sql, data, function(err) {
       if (err) {
-        return console.log(err.message);}
-        console.log("An update has been inserted");
-    }
-
+        return console.error(err.message);
+      }
+      console.log(`Row(s) updated: ${this.changes}`);
+     
+    });
 
     db.run("DELETE * from Hamsters where condition"); 
   
