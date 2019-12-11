@@ -48,7 +48,7 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
      });
      res.sendStatus(200)
   });
-    db.run('INSERT INTO Hamsters(col1,col2,col3,) VALUES(ReportedAnger,ReportedDepression,ReportedAnxiety)', function(err)
+    db.run('INSERT INTO Hamsters(ReportedAnger,ReportedDepression,ReportedAnxiety) VALUES(?)', function(err)
     { if (err) {
       return console.log(err.message);
     }
