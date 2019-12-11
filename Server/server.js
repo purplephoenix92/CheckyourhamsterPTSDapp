@@ -65,8 +65,37 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
       console.log(`Row(s) updated: ${this.changes}`);
      
     });
-
+    app.post('/insert', (req, res) =>  {
+      const name = req.body.name;
+      console.log(req.body); 
+      // The first arguement is your SQL with parameters indicated by ?, the order of the parameters is the order
+      //   they will be applied. The second arguement is the array of parameters. In this case only one
+      db.run('INSERT INTO Hamsters(ReportedAnger,ReportedDepression,ReportedAnxiety) VALUES (?)', [name], function(err){
+       if (err) {
+           return console.log(err.message);
+         }
+         // get the last insert id
+         console.log (name);
+         console.log(`A row has been inserted with rowid ${this.lastID}`);
+      });
+      res.sendStatus(200)
+   });
     db.run("DELETE * from Hamsters WHERE HamsterID = 23"); 
+    app.post('/insert', (req, res) =>  {
+      const name = req.body.name;
+      console.log(req.body); 
+      // The first arguement is your SQL with parameters indicated by ?, the order of the parameters is the order
+      //   they will be applied. The second arguement is the array of parameters. In this case only one
+      db.run('DELETE ReportedAnger FROM Hamsters WHERE (HamsterID = 23) VALUES (?)', [name], function(err){
+       if (err) {
+           return console.log(err.message);
+         }
+         // get the last insert id
+         console.log (name);
+         console.log(`A row has been inserted with rowid ${this.lastID}`);
+      });
+      res.sendStatus(200)
+   });
   
   app.get('/select', (req, res) => 
   {
