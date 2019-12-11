@@ -52,10 +52,15 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
     { if (err) {
       return console.log(err.message);
     }
-    console.log ('A column has been inserted');
+    console.log ("A column has been inserted");
     });
 
-    db.run("UPDATE Hamsters where HamsterID = 23");
+    db.run("UPDATE Hamsters where HamsterID = 23"); function(err) {
+      if (err) {
+        return console.log(err.message);}
+        console.log("An update has been inserted");
+    }
+
 
     db.run("DELETE * from Hamsters where condition"); 
   
