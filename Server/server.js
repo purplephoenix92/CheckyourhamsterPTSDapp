@@ -66,7 +66,7 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
      
     });
 
-    db.run("DELETE * from Hamsters where condition"); 
+    db.run("DELETE * from Hamsters WHERE HamsterID = 23"); 
   
   app.get('/select', (req, res) => 
   {
