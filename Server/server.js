@@ -80,7 +80,7 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
       });
       res.sendStatus(200)
    });
-    db.run("DELETE FROM Hamsters WHERE Hamsters = 23"); 
+    db.run("DELETE FROM ReportedAnxiety WHERE Hamsters = 27"); 
     app.post('/insert', (req, res) =>  {
       const name = req.body.name;
       console.log(req.body); 
