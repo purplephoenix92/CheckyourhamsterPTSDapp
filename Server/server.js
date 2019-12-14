@@ -30,7 +30,7 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
    ReportedAnxiety int
 );`);
   app.get('/', (req, res) => {
-     res.send('Hello World!')
+     res.send('Table created!')
   });
   
   app.post('/insert', (req, res) =>  {
@@ -46,6 +46,9 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
         console.log (name);
         console.log(`A row has been inserted with rowid ${this.lastID}`);
      });
+     app.get('/', (req, res) => {
+      res.send('READ!')
+   });
      res.sendStatus(200)
   });
     db.run('INSERT INTO Hamsters(ReportedAnger,ReportedDepression,ReportedAnxiety) VALUES(?)', function(err)
@@ -78,9 +81,13 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
          console.log (name);
          console.log(`A row has been inserted with rowid ${this.lastID}`);
       });
+      app.get('/', (req, res) => {
+        res.send('Table updated!')
+     });
+      
       res.sendStatus(200)
    });
-    db.run("DELETE FROM ReportedAnxiety WHERE Hamsters = 27"); 
+    db.run("DELETE FROM HamsterID WHERE Hamsters = 27"); 
     app.post('/insert', (req, res) =>  {
       const name = req.body.name;
       console.log(req.body); 
@@ -94,6 +101,9 @@ db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
          console.log (name);
          console.log(`A row has been inserted with rowid ${this.lastID}`);
       });
+      app.get('/', (req, res) => {
+        res.send('Table deleted!')
+     });
       res.sendStatus(200)
    });
   
