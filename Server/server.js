@@ -67,7 +67,7 @@ app.post('/insert', (req, res) => {
   console.log(req.body);
   // The first arguement is your SQL with parameters indicated by ?, the order of the parameters is the order
   //   they will be applied. The second arguement is the array of parameters. In this case only one
-  // MRD same as above with needing to specify multiple arguements
+  // There are multiple values placeholders, as there are multiple values that will be inputted by the user
   db.run('INSERT INTO Hamsters(ReportedAnger,ReportedDepression,ReportedAnxiety) VALUES (?, ?, ?)', [req.body.anger, req.body.depression, req.body.anxiety], function (err) {
     if (err) {
       return console.log(err.message);

@@ -23,7 +23,15 @@ class Breathing extends React.Component {
     }
 }
 
-
+// var timeleft = 5;
+// var downloadTimer = setInterval(function(){
+//   document.getElementById("progressBar").value = 5 - timeleft;
+//   timeleft -= 1;
+//   if(timeleft <= 0){
+//     clearInterval(downloadTimer);
+//   }
+// }, 1000);
+// <progress value="0" max="10" id="progressBar"></progress>
 
 
 
