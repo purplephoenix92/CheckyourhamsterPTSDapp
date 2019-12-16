@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+// My goal is to eventually have a looping 5 second timer with a progress bar for users to watch as they are focusing on their breathing
 
 class Breathing extends React.Component {
 
