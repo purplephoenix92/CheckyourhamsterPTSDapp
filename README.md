@@ -22,7 +22,8 @@ grounding, and reach out to crisis resources as needed.
 4. npm install express --save
 
 ^ You will also need to install postman on your local environment on your computer to test the GET POST PUT and DELETE for the database. 
-
+^When navigating directories, Client is where the user will see the site and its different tabs to navigate to, which will be on local host 3000
+^ Server is where you will change to that directory and run node server to get the database component to start-up and it will be on local host 5000
 
 ## Features
 
