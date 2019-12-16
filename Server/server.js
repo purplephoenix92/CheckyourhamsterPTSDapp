@@ -8,7 +8,7 @@ const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
-// MRD This should have been Hamster.db, I converted your csv to a db using the sqlite tool
+// The const above show that there is sqlite, express and bodyParser being used in the project
 let db = new sqlite3.Database('./Hamsters.db', (err) => {
   if (err) {
     console.error(err.message);
@@ -53,7 +53,7 @@ app.post('/hamster', (req, res) => {
 // POST for INSERT, PUT for UPDATE, GET for SELECT, and Delete to DELETE
 app.put('/hamster/:id', (req, res) => {
   let id = req.params.id;
-
+// The question mark indicates the value that will be inputted by the user
   let sql = `UPDATE Hamsters
               SET ReportedAnger = ?,
               ReportedDepression = ?,
