@@ -21,6 +21,9 @@ grounding, and reach out to crisis resources as needed.
 3. npm install sqlite3 --save
 4. npm install express --save
 
+^ You will also need to install postman on your local environment on your computer to test the GET POST PUT and DELETE for the database. 
+
+
 ## Features
 
 1. Home page to show history for user individual account
