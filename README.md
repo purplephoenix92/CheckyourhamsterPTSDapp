@@ -15,6 +15,12 @@ grounding, and reach out to crisis resources as needed.
 
 ^ React.js framework for front-end
 
+^ The following dependencies will need to be installed:
+1. node run npm install
+2. npm install body-parser --save
+3. npm install sqlite3 --save
+4. npm install express --save
+
 ## Features
 
 1. Home page to show history for user individual account
