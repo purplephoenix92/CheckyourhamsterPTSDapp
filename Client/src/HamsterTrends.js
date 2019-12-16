@@ -8,7 +8,7 @@ class HamsterTrends extends React.Component {
         super();
         this.state = {};
     }
-//   Below is the message I wanted people to see when they look on my trends page, to explain why I have created this page
+//   Below is the message I wanted people to see when they look on my trends page, to explain that this is where they will track over time their reported check-ins of emotional intensity
     render() {
         
         return (

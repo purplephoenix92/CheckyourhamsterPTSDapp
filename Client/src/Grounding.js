@@ -8,7 +8,7 @@ class Grounding extends React.Component {
         super();
         this.state = {};
     }
-//   Below is the message I wanted people to see when they look on my grounding page, to explain why I have created this site. 
+//   Below is the message I wanted people to see when they look on my grounding page, to explain why I have created this page. 
     render() {
         
         return (
