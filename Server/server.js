@@ -16,7 +16,6 @@ let db = new sqlite3.Database('./Hamsters.db', (err) => {
   console.log('Connected to the database.');
 });
 
-db.run('DROP TABLE IF EXISTS Hamsters'); 
 //   create hamster table
 db.run(`CREATE TABLE IF NOT EXISTS Hamsters(
    HamsterID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -50,12 +49,13 @@ app.post('/hamster', (req, res) => {
   });
 
 });
-
+// The mistake that kept messing me up at first was using app.post for UPDATE and DELETE. It should be
+// POST for INSERT, PUT for UPDATE, GET for SELECT, and Delete to DELETE
 app.put('/hamster/:id', (req, res) => {
   let id = req.params.id;
 
-  let sql = `UPDATE Hamsters SET
-              ReportedAnger = ?,
+  let sql = `UPDATE Hamsters
+              SET ReportedAnger = ?,
               ReportedDepression = ?,
               ReportedAnxiety = ?
               WHERE HamsterID = ?`;
